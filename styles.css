@@ -149,17 +149,68 @@ footer,
 .btn-bg {
     justify-content: center;
 }
-.experience{
+
+.experience {
     margin: auto;
     margin-top: 1.4rem;
     max-width: 20rem;
 }
-.experience b{
+
+.experience b {
     font-weight: 500;
 }
 
-.experience h2{
+.experience h2 {
     width: 30%;
     font-weight: 300;
     font-size: 0.9rem;
+}
+
+.cta {
+    margin-top: 1.2rem;
+}
+
+.cta,
+.btn-bg {
+    gap: 2rem;
+}
+
+.btn,
+.btn-2,
+.btn-bg {
+    border-radius: 0.7rem;
+    border: none;
+}
+
+.btn,
+.btn-2,
+.btn-bg,
+.wrapper h3 {
+    font-weight: 600;
+}
+
+.btn,
+.btn-2,
+.btn-bg,
+.wrapper,
+.project-wrapper {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.download-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme-btn,
+.download-btn:hover,
+.contact-btn:hover,
+.btn-2:hover,
+.wrapper img:hover {
+    cursor: pointer;
+}
+.btn:hover,
+.btn-2:hover,
+.project-wrapper:hover,
+.logo-container a:hover {
+    transform: scale(0.98);
 }
