@@ -222,3 +222,18 @@ footer,
 .logo-container a:active {
     transform: scale(1);
 }
+
+.contact-btn:hover, .download-btn{
+    background-color: var(--btn-bg-color);
+}
+.contact-btn:hover{
+    transition: background-color 0.3 ease, color 0.3 ease;
+}
+
+.btn-2:hover, .active-btn{
+    background-color: white;
+}
+
+.btn, .btn-2{
+    height: 3rem;
+}
