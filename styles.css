@@ -208,9 +208,17 @@ footer,
 .wrapper img:hover {
     cursor: pointer;
 }
+
 .btn:hover,
 .btn-2:hover,
 .project-wrapper:hover,
 .logo-container a:hover {
     transform: scale(0.98);
+}
+
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.logo-container a:active {
+    transform: scale(1);
 }
