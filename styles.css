@@ -1,6 +1,6 @@
 :root {
     /* Ligth Mode */
-    --primary-font:'Poppins', sans-serif;
+    --primary-font: 'Poppins', sans-serif;
     --primary-bg-color: #ffff;
     --primary-tx-color: #0000;
     --secondary-tx-color: #575757;
@@ -9,8 +9,8 @@
     --btn-bg-ligth: #eeeeee;
 
     /* Dark Mode */
-    --dark-primary-font:'Poppins', sans-serif;
-    --dark-primary-bg-color: #22222;
+    --dark-primary-font: 'Poppins', sans-serif;
+    --dark-primary-bg-color: #222222;
     --dark-primary-tx-color: #ffff;
     --dark-secondary-tx-color: #828282;
     --dark-btn-bg-color: #1e88e5;
@@ -18,8 +18,56 @@
     --dark-btn-bg-ligth: #eeeeee;
 }
 
-body{
+.dark-theme {
+    --primary-bg-color: var(--dark-primary-bg-color);
+    --primary-tx-color: var(--dark-primary-tx-color);
+    --secondary-tx-color: var(--dark-secondary-tx-color);
+    --btn-bg-color: var(--dark-btn-bg-color);
+    --cta-hover-color: var(--dark-cta-hover-color);
+    --btn-bg-ligth: var(--dark-btn-bg-ligth);
+}
+
+body {
+    margin: 0;
     font-family: var(--primary-font);
     background-color: var(--primary-bg-color);
+    color: var(--primary-tx-color);
+}
 
+.theme-btn {
+    position: relative;
+    left: 8.5rem;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    cursor: default;
+}
+
+article,
+footer,
+.hero,
+.logo-container,
+.experience,
+.cta,
+.portafolio-skills,
+.btn-bg,
+.portafolio,
+.skills {
+    display: flex;
+}
+
+.hero, .portafolio, .skills{
+    flex-direction: column;
+}
+
+.hero, .btn-bg, .portafolio, .skills{
+    align-items: center;
+}
+
+.theme-btn, .logo-container a, .logo-container img{
+    height: 1.5rem;
 }
