@@ -1,5 +1,5 @@
 :root {
-    /*Ligth Mode */
+    /* Ligth Mode */
     --primary-font:'Poppins', sans-serif;
     --primary-bg-color: #ffff;
     --primary-tx-color: #0000;
@@ -8,6 +8,14 @@
     --cta-hover-color: #167bce;
     --btn-bg-ligth: #eeeeee;
 
+    /* Dark Mode */
+    --dark-primary-font:'Poppins', sans-serif;
+    --dark-primary-bg-color: #22222;
+    --dark-primary-tx-color: #ffff;
+    --dark-secondary-tx-color: #828282;
+    --dark-btn-bg-color: #1e88e5;
+    --dark-cta-hover-color: #0d5e8c;
+    --dark-btn-bg-ligth: #eeeeee;
 }
 
 body{
