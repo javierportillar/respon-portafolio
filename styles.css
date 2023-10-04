@@ -94,7 +94,7 @@ article,
     /* Space between icons*/
 }
 
-.hero-pic{
+.hero-pic {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -102,7 +102,7 @@ article,
     position: relative;
 }
 
-.inner-circle{
+.inner-circle {
     content: "";
     position: absolute;
     top: 0.1rem;
@@ -110,6 +110,17 @@ article,
     bottom: 0.1rem;
     right: 0.1rem;
     border-radius: 50%;
-    border:  0.18rem solid var(--primary-bg-color);
+    border: 0.18rem solid var(--primary-bg-color);
     z-index: 1;
+}
+
+.hero-pic img,
+.wrapper img {
+    width: 100%;
+}
+.hero-pic img{
+    height: 100%;
+    object-fit: cover;
+    object-position: top 0.4rem right -1.3rem;
+    transform: scale(1.9);
 }
