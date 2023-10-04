@@ -1,0 +1,17 @@
+:root {
+    /*Ligth Mode */
+    --primary-font:'Poppins', sans-serif;
+    --primary-bg-color: #ffff;
+    --primary-tx-color: #0000;
+    --secondary-tx-color: #575757;
+    --btn-bg-color: #2196f3;
+    --cta-hover-color: #167bce;
+    --btn-bg-ligth: #eeeeee;
+
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+
+}
