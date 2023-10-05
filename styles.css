@@ -122,8 +122,9 @@ article,
 .hero-pic img {
     height: 100%;
     object-fit: cover;
-    object-position: top 0.4rem right -1.3rem;
-    transform: scale(1.9);
+    object-position:  right -1.3rem;
+    transform: scale(1);
+    background-color: var(--primary-tx-color);
 }
 
 .hero-info h1,
