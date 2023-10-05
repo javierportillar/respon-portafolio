@@ -223,17 +223,42 @@ footer,
     transform: scale(1);
 }
 
-.contact-btn:hover, .download-btn{
+.contact-btn:hover,
+.download-btn {
     background-color: var(--btn-bg-color);
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     transition: background-color 0.3 ease, color 0.3 ease;
 }
 
-.btn-2:hover, .active-btn{
+.btn-2:hover,
+.active-btn {
     background-color: white;
 }
 
-.btn, .btn-2{
+.btn,
+.btn-2 {
     height: 3rem;
+}
+
+.btn {
+    width: 9rem;
+}
+
+.btn-2 {
+    width: 8.9rem;
+}
+.download-btn{
+    transition: background-color 0.3s ease;
+}
+
+.portafolio-skills{
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.btn-bg, .wrapper{
+    width: 20rem;
 }
