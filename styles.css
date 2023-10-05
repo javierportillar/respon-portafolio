@@ -249,16 +249,49 @@ footer,
 .btn-2 {
     width: 8.9rem;
 }
-.download-btn{
+
+.download-btn {
     transition: background-color 0.3s ease;
 }
 
-.portafolio-skills{
+.portafolio-skills {
     height: 4rem;
     margin-top: 1.5rem;
     position: relative;
 }
 
-.btn-bg, .wrapper{
+.btn-bg,
+.wrapper {
     width: 20rem;
+}
+
+article p,
+.btn-bg {
+    background-color: var(--btn-bg-ligth);
+}
+
+.hero,
+.portafolio,
+.skills {
+    margin-top: 2rem;
+}
+
+.skills{
+    /* display: none; */
+}
+
+.wrapper img{
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+article{
+    flex-wrap: wrap;
+}
+
+article p {
+    border-radius: 0.5rem;
+    flex-grow: 20;
+    padding: 1rem;
 }
