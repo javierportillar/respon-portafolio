@@ -197,8 +197,11 @@ footer,
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.download-btn:hover {
+.download-btn:hover,
+.contact-btn:hover {
     background-color: var(--cta-hover-color);
+    color: var(--btn-bg-ligth);
+    transition: background-color 0.3 ease, color 0.3 ease;
 }
 
 .theme-btn,
@@ -223,14 +226,13 @@ footer,
     transform: scale(1);
 }
 
-.contact-btn:hover,
+.contact-btn,
 .download-btn {
     background-color: var(--btn-bg-color);
+    color: var(--primary-tx-color);
+
 }
 
-.contact-btn:hover {
-    transition: background-color 0.3 ease, color 0.3 ease;
-}
 
 .btn-2:hover,
 .active-btn {
@@ -276,17 +278,17 @@ article p,
     margin-top: 2rem;
 }
 
-.skills{
+.skills {
     /* display: none; */
 }
 
-.wrapper img{
+.wrapper img {
     border-radius: 1rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
-article{
+article {
     flex-wrap: wrap;
 }
 
@@ -296,6 +298,32 @@ article p {
     padding: 1rem;
 }
 
-footer{
+footer {
     margin: 3rem 0;
+}
+
+@media screen and (min-width:850px) {
+
+    .skills,
+    .portafolio {
+        flex-direction: row;
+        width: 45rem;
+    }
+
+    .skills {
+        margin: 2rem auto 0;
+        justify-content: center;
+    }
+
+    .portafolio {
+        margin: 2rem auto 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: calc(48%);
+        flex: none;
+    }
+
 }
