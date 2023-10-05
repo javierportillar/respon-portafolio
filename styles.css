@@ -295,3 +295,7 @@ article p {
     flex-grow: 20;
     padding: 1rem;
 }
+
+footer{
+    margin: 3rem 0;
+}
