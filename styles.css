@@ -302,6 +302,10 @@ footer {
     margin: 3rem 0;
 }
 
+.wrapper h3{
+    padding-bottom: 1rem;
+}
+
 @media screen and (min-width:850px) {
 
     .skills,
