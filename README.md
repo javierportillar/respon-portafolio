@@ -2,25 +2,26 @@
 
 ## steps
 
-To start with **index.html**, inside head it was linked the necessary fonts for this project.
+To begin with **index.html** inside the *<head>* section, necessary fonts were linked for this project.
 
 ### Body
 
-Inside the body element in **index.html** it was created the first section with class name *hero*, wich contains the toggle mode button, profile picture with an aditional div for making future adjustments, under that picture, there is also the name, and job prefereces, there are 3 icons that pulls up the information related, (ex, github icon pulls personal gitbuh account).
+Inside the *<body>* element in **index.html**, the first section with the class name hero was created. It contains the toggle mode button, a profile picture with an additional div for future adjustments. Under that picture, there is also the name and job preferences. There are 3 icons that provide related information; for example, the GitHub icon links to a personal GitHub account.
 
-The second section has a name class *experience*, wich contains experience information and time related that experience.
+The second section has the class name *experience*, which contains information about experience and its associated time frame.
 
-The third section has a name class *cta*, this contains two buttons with name class download-btn and contact-btn.
-download-btn contains an pdf about the cv, contact-btn has mailto:personal@email.com to get in contact with the email written.
+The third section has a name class *cta*, which includes two buttons with the class names download-btn and contact-btn. download-btn provides a link to a PDF containing the CV, while contact-btn uses *mailto:personal@email.com* to facilitate contact via email.
 
-The fourth section has a name class *portafolio-skills*, contains portafolio and skills buttons, these have the function of change the information related below.
+The fourth section has the class name *portafolio-skills*, containing buttons for portafolio and skills. These buttons have the function of changing the related information below.
 
-The fifth section with class *portafolio* have the picture of the projects developed, this pictures are inside an *a* element, that should pulls the link for your projects.
+The fifth section, with the class name portafolio, displays images of the projects developed. These images are within an *<a>* element, which should link to your projects.
 
-There is a sixth section class name *skills* that containt two divs for each topic, in this case there is just Frontend and Backend, under each div there are listed n p element, the individual skills for each topic.
+There is a sixth section with the class name *skills* that contains two divs for each topic. In this case, there are only Frontend and Backend. Under each div, there is a list of *<p>* elements with individual skills for each topic.
 
-The last section contains fotter that has the c icon, the personal name and the actual year.
+The last section contains a footer with the copyright icon, the personal name, and the current year.
 
 ### CSS
 
-For css code, some variables were declarated for the respective modes (Ligth and Dark mode). most of the parents elements were center, for tittles (h1,h2,h3) it was assigned *cursor:default*, for btn, links it was *pointer*, de distribution of the elementes is flex, each element has gap to create a space bettwen icons, pictures and text. it was created one media quiery, that is over 850px, in that case the distribution of the projects under portafolio is showed 2 by 2, fixed with *flex-direction*
+For the CSS code, some variables were declared for the respective modes (Light and Dark mode). Most parent elements were centered. For titles (h1, h2, h3), *cursor: default* was assigned, while for buttons and links, *cursor: pointer* was used. The distribution of elements uses flexbox, and each element has a gap to create space between icons, pictures, and text. A media query was created, which activates for screens over 850px. In this case, the distribution of projects under the portfolio section is displayed in a 2x2 grid, fixed with flex-direction.
+
+
