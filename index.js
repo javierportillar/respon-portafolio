@@ -3,6 +3,7 @@ const portafolio = document.getElementById("portafolio");
 const pflBtn = document.getElementById("portafolio-btn");
 const skills = document.querySelector(".skills");
 const skillBtn = document.getElementById("skills-btn");
+const toggleThemBtn = document.getElementById("toggleTheme");
 
 //Portafolio button event
 pflBtn.addEventListener("click", () => {
@@ -22,7 +23,7 @@ skillBtn.addEventListener("click", () => {
 // Ligth and Dark mode
 
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleThemBtn = document.getElementById("toggleTheme");
+  const toggleThemBtn = document.getElementById("toggle-theme");
   const themeIcon = document.querySelector('img[alt="theme-icon"]');
   const githubLogo = document.querySelector('img[alt="github logo"]');
   const linkedinLogo = document.querySelector('img[alt="linkedin logo"]');
@@ -41,5 +42,23 @@ document.addEventListener("DOMContentLoaded", () => {
     theme: "assets/theme_dark.png",
   };
 
+  function setTheme(isDark) {
+    githubLogo.src = isDark ? darkLogos.github : ligthLogos.github;
+    linkedinLogo.src = isDark ? darkLogos.linkedin : ligthLogos.linkedin;
+    emailLogo.src = isDark ? darkLogos.email : ligthLogos.email;
+    themeIcon.src = isDark ? darkLogos.theme : ligthLogos.theme;
+  }
 
+  toggleThemBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-theme");
+    localStorage.setItem("isDark", isDark);
+    setTheme(isDark);
+  });
+
+  const loadTheme = () => {
+    const isDark = localStorage.getItem("isDark") === "true";
+    document.body.classList.toggle("dark-theme", isDark);
+    setTheme(isDark);
+  };
+  loadTheme();
 });
