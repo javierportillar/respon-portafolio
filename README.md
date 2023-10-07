@@ -1,5 +1,7 @@
 # Portafolio Javier Portilla Rosero
 
+[portafolio-javier](https://portafolio-javier-p.web.app/) Under this link is the project deployed to check it out.
+
 ## steps
 
 To begin with **index.html** inside the *<head>* section, necessary fonts were linked for this project.
