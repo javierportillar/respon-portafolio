@@ -63,10 +63,16 @@ a {
     text-align: center;
 }
 
-.theme-btn {
+.top-actions {
     position: absolute;
     top: 1rem;
     right: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.top-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +83,21 @@ a {
     background: var(--surface-color);
     box-shadow: 0 0.5rem 1.5rem var(--shadow-color);
     cursor: pointer;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--secondary-tx-color);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn {
+    width: 2.5rem;
+    letter-spacing: 0.04em;
+}
+
+.lang-btn:hover {
+    background: var(--btn-bg-color);
+    color: #fff;
 }
 
 .theme-btn img,

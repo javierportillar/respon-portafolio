@@ -15,9 +15,12 @@
 <body>
     <main>
         <section class="hero" aria-labelledby="hero-title">
-            <button id="toggle-theme" class="theme-btn" type="button" aria-label="Toggle dark mode">
-                <img src="assets/theme_light.png" alt="" aria-hidden="true">
-            </button>
+            <div class="top-actions">
+                <button id="lang-toggle" class="top-btn lang-btn" type="button" aria-label="Toggle language" title="Español / English">ES</button>
+                <button id="toggle-theme" class="top-btn theme-btn" type="button" aria-label="Toggle dark mode">
+                    <img src="assets/theme_light.png" alt="" aria-hidden="true">
+                </button>
+            </div>
 
             <div class="hero-pic">
                 <div class="inner-circle"></div>
@@ -25,11 +28,11 @@
             </div>
 
             <div class="hero-info">
-                <p class="eyebrow">Available for Frontend roles</p>
+                <p class="eyebrow" data-i18n="hero_eyebrow">Available for Frontend roles</p>
                 <h1 id="hero-title">Javier Portilla</h1>
-                <h2>Frontend Developer for data-rich products</h2>
-                <p class="hero-subtitle">React · TypeScript · Tailwind CSS · Dashboards · Realtime UI</p>
-                <p class="hero-copy">I build polished interfaces for analytical tools, POS systems, realtime monitoring, and media-heavy dashboards — with the data-product judgment that comes from 3+ years in analytics and data engineering.</p>
+                <h2 data-i18n="hero_title">Frontend Developer for data-rich products</h2>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">React · TypeScript · Tailwind CSS · Dashboards · Realtime UI</p>
+                <p class="hero-copy" data-i18n="hero_copy">I build polished interfaces for analytical tools, POS systems, realtime monitoring, and media-heavy dashboards — with the data-product judgment that comes from 3+ years in analytics and data engineering.</p>
 
                 <div class="logo-container" aria-label="Social links">
                     <a href="https://github.com/javierportillar" aria-label="GitHub profile">
@@ -48,33 +51,33 @@
         <section class="experience" aria-label="Profile highlights">
             <article>
                 <b>9</b>
-                <span>featured projects</span>
+                <span data-i18n="exp1">featured projects</span>
             </article>
             <article>
                 <b>3+</b>
-                <span>years in data products</span>
+                <span data-i18n="exp2">years in data products</span>
             </article>
             <article>
                 <b>ET</b>
-                <span>timezone overlap</span>
+                <span data-i18n="exp3">timezone overlap</span>
             </article>
         </section>
 
         <section class="cta" aria-label="Primary actions">
-            <a class="btn download-btn" href="assets/CVJAVIERPORTILLAROSERO.pdf" download>Download CV</a>
-            <a class="btn contact-btn" href="mailto:javierandres.008@hotmail.com">Contact Me</a>
+            <a class="btn download-btn" href="assets/CVJAVIERPORTILLAROSERO.pdf" download data-i18n="cta_download">Download CV</a>
+            <a class="btn contact-btn" href="mailto:javierandres.008@hotmail.com" data-i18n="cta_contact">Contact Me</a>
         </section>
 
         <section class="positioning" aria-labelledby="positioning-title">
-            <p class="eyebrow">Why this role fits</p>
-            <h2 id="positioning-title">I build the kind of interfaces this role needs.</h2>
-            <p>Most of my strongest projects are dashboards, admin panels, realtime tools, and data-heavy workflows. I enjoy the part where UI craft meets messy real data: clear states, useful charts, API edge cases, responsive layouts, and screens that help people make decisions without fighting the product.</p>
+            <p class="eyebrow" data-i18n="pos_eyebrow">Why this role fits</p>
+            <h2 id="positioning-title" data-i18n="pos_title">I build the kind of interfaces this role needs.</h2>
+            <p data-i18n="pos_copy">Most of my strongest projects are dashboards, admin panels, realtime tools, and data-heavy workflows. I enjoy the part where UI craft meets messy real data: clear states, useful charts, API edge cases, responsive layouts, and screens that help people make decisions without fighting the product.</p>
         </section>
 
         <section class="portfolio-skills">
             <div class="btn-bg" role="tablist" aria-label="Portfolio sections">
-                <button class="btn-2 active-btn" id="portfolio-btn" type="button" role="tab" aria-selected="true" aria-controls="portfolio">Portfolio</button>
-                <button class="btn-2" id="skills-btn" type="button" role="tab" aria-selected="false" aria-controls="skills">Skills</button>
+                <button class="btn-2 active-btn" id="portfolio-btn" type="button" role="tab" aria-selected="true" aria-controls="portfolio" data-i18n="tab_portfolio">Portfolio</button>
+                <button class="btn-2" id="skills-btn" type="button" role="tab" aria-selected="false" aria-controls="skills" data-i18n="tab_skills">Skills</button>
             </div>
         </section>
 
@@ -83,9 +86,9 @@
                 <a class="project-shot" href="https://mymoneyappjpr.web.app/" aria-label="Open FinPilot live app">
                     <img src="assets/projects/finpilot.jpg" alt="FinPilot secure access screen running locally">
                 </a>
-                <h3>FinPilot — Personal Finance</h3>
-                <p>React 19 · TypeScript · Recharts · Supabase · PWA</p>
-                <small>Realtime finance dashboard with charts, KPI cards, categorization, persistent state, and mobile-first behavior.</small>
+                <h3 data-i18n="proj1_title">FinPilot — Personal Finance</h3>
+                <p data-i18n="proj1_tech">React 19 · TypeScript · Recharts · Supabase · PWA</p>
+                <small data-i18n="proj1_desc">Realtime finance dashboard with charts, KPI cards, categorization, persistent state, and mobile-first behavior.</small>
                 <div class="project-links">
                     <a href="https://mymoneyappjpr.web.app/">Live app</a>
                     <a href="https://github.com/javierportillar/personalApp">Repository</a>
@@ -96,9 +99,9 @@
                 <a class="project-shot" href="https://javierportillar.github.io/saviaInventory/" aria-label="Open Savia Inventory live app">
                     <img src="assets/projects/savia-inventory.jpg" alt="Savia Inventory dashboard running locally">
                 </a>
-                <h3>Savia Inventory — POS</h3>
-                <p>React 18 · TypeScript · Tailwind · Supabase</p>
-                <small>Restaurant POS and operations platform with complex cart state, split payments, inventory modules, analytics, and AI strategy support.</small>
+                <h3 data-i18n="proj2_title">Savia Inventory — POS</h3>
+                <p data-i18n="proj2_tech">React 18 · TypeScript · Tailwind · Supabase</p>
+                <small data-i18n="proj2_desc">Restaurant POS and operations platform with complex cart state, split payments, inventory modules, analytics, and AI strategy support.</small>
                 <div class="project-links">
                     <a href="https://javierportillar.github.io/saviaInventory/">Live app</a>
                     <a href="https://github.com/javierportillar/saviaInventory">Repository</a>
@@ -109,9 +112,9 @@
                 <a class="project-shot" href="https://portillaroserocasa.web.app/" aria-label="Open Casa live dashboard">
                     <img src="assets/projects/casa.jpg" alt="Casa Sentinel access dashboard running locally">
                 </a>
-                <h3>Casa — Facial Access</h3>
-                <p>React 19 · Supabase · Recharts · Media UI</p>
-                <small>Realtime dashboard for a Raspberry Pi facial-recognition system with device metrics, camera previews, logs, remote commands, and video playback.</small>
+                <h3 data-i18n="proj3_title">Casa — Facial Access</h3>
+                <p data-i18n="proj3_tech">React 19 · Supabase · Recharts · Media UI</p>
+                <small data-i18n="proj3_desc">Realtime dashboard for a Raspberry Pi facial-recognition system with device metrics, camera previews, logs, remote commands, and video playback.</small>
                 <div class="project-links">
                     <a href="https://portillaroserocasa.web.app/">Live app</a>
                     <a href="https://github.com/javierportillar/casa">Repository</a>
@@ -122,9 +125,9 @@
                 <a class="project-shot" href="https://fondofortuna.web.app/" aria-label="Open Fondo Fortuna live app">
                     <img src="assets/projects/fondo-fortuna.jpg" alt="Fondo Fortuna store running locally">
                 </a>
-                <h3>Fondo Fortuna</h3>
-                <p>React 19 · Tailwind · Recharts · Firebase</p>
-                <small>Cooperative management platform with role-based routing, dashboards, loan/savings flows, mobile cart, and Gemini-powered financial advisor.</small>
+                <h3 data-i18n="proj4_title">Fondo Fortuna</h3>
+                <p data-i18n="proj4_tech">React 19 · Tailwind · Recharts · Firebase</p>
+                <small data-i18n="proj4_desc">Cooperative management platform with role-based routing, dashboards, loan/savings flows, mobile cart, and Gemini-powered financial advisor.</small>
                 <div class="project-links">
                     <a href="https://fondofortuna.web.app/">Live app</a>
                     <a href="https://github.com/javierportillar/fondof">Repository</a>
@@ -135,9 +138,9 @@
                 <a class="project-shot" href="https://apartamentosamobladosbosquesdellimonar.com.co/" aria-label="Open Bosques del Limonar live site">
                     <img src="assets/projects/bosques-del-limonar.jpg" alt="Bosques del Limonar landing page running locally">
                 </a>
-                <h3>Bosques del Limonar</h3>
-                <p>React 18 · TypeScript · GSAP · Framer Motion</p>
-                <small>Premium landing page with scroll-triggered motion, parallax, responsive visual storytelling, and reduced-motion support.</small>
+                <h3 data-i18n="proj5_title">Bosques del Limonar</h3>
+                <p data-i18n="proj5_tech">React 18 · TypeScript · GSAP · Framer Motion</p>
+                <small data-i18n="proj5_desc">Premium landing page with scroll-triggered motion, parallax, responsive visual storytelling, and reduced-motion support.</small>
                 <div class="project-links">
                     <a href="https://apartamentosamobladosbosquesdellimonar.com.co/">Live site</a>
                     <a href="https://github.com/javierportillar/bosquesdellimonar">Repository</a>
@@ -148,9 +151,9 @@
                 <a class="project-shot" href="https://javierportillar.github.io/saviaMenu/" aria-label="Open SAVIA Menu live site">
                     <img src="assets/projects/savia-menu.jpg" alt="SAVIA digital menu running locally">
                 </a>
-                <h3>SAVIA — Digital Menu</h3>
-                <p>React 19 · Tailwind · Vanilla JS · JSON</p>
-                <small>Fast digital menu with JSON data, live search, responsive layout, print stylesheet, and GitHub Pages deployment.</small>
+                <h3 data-i18n="proj6_title">SAVIA — Digital Menu</h3>
+                <p data-i18n="proj6_tech">React 19 · Tailwind · Vanilla JS · JSON</p>
+                <small data-i18n="proj6_desc">Fast digital menu with JSON data, live search, responsive layout, print stylesheet, and GitHub Pages deployment.</small>
                 <div class="project-links">
                     <a href="https://javierportillar.github.io/saviaMenu/">Live menu</a>
                     <a href="https://github.com/javierportillar/saviaMenu">Repository</a>
@@ -162,9 +165,9 @@
                 <a class="project-shot" href="https://app.fragloesja.uk/" aria-label="Open MotoShop Data live app">
                     <img src="assets/projects/motoshop-data.jpg" alt="MotoShop Data PWA login running locally">
                 </a>
-                <h3>MotoShop Data Platform</h3>
-                <p>Next.js 14 · FastAPI · DuckDB · Recharts · PWA</p>
-                <small>Digital transformation platform for a motorcycle parts business: ETL, data products, SKU search, dashboards, forecasting, and AI-assisted operational insights.</small>
+                <h3 data-i18n="proj7_title">MotoShop Data Platform</h3>
+                <p data-i18n="proj7_tech">Next.js 14 · FastAPI · DuckDB · Recharts · PWA</p>
+                <small data-i18n="proj7_desc">Digital transformation platform for a motorcycle parts business: ETL, data products, SKU search, dashboards, forecasting, and AI-assisted operational insights.</small>
                 <div class="project-links">
                     <a href="https://app.fragloesja.uk/">Live app</a>
                     <a href="https://github.com/javierportillar/motoshopData">Repository</a>
@@ -175,9 +178,9 @@
                 <div class="project-shot" aria-label="Sign Language Recognition local screenshot">
                     <img src="assets/projects/sign-language.jpg" alt="Sign Language Recognition Streamlit UI running locally">
                 </div>
-                <h3>Sign Language Recognition</h3>
-                <p>Streamlit · gRPC · Docker · YOLO · ONNX</p>
-                <small>Microservice-based computer vision system: Streamlit UI sends image/video frames to a gRPC inference service running a YOLO model exported to ONNX.</small>
+                <h3 data-i18n="proj8_title">Sign Language Recognition</h3>
+                <p data-i18n="proj8_tech">Streamlit · gRPC · Docker · YOLO · ONNX</p>
+                <small data-i18n="proj8_desc">Microservice-based computer vision system: Streamlit UI sends image/video frames to a gRPC inference service running a YOLO model exported to ONNX.</small>
                 <div class="project-links">
                     <span>Local Docker demo</span>
                     <a href="https://github.com/juan-plazas05/TallerFinalGestionProyectos">Academic repo</a>
@@ -188,9 +191,9 @@
                 <div class="project-shot" aria-label="Qbano conversational agent local screenshot">
                     <img src="assets/projects/qbano-agent.jpg" alt="Qbano conversational agent Streamlit UI running locally">
                 </div>
-                <h3>Qbano Conversational Agent</h3>
-                <p>Streamlit · FastAPI · LangChain · LangGraph · RAG</p>
-                <small>Academic LLM agent for Sandwich Qbano with RAG, memory, prompt experiments, FastAPI endpoints, batch evaluation, and n8n workflow documentation.</small>
+                <h3 data-i18n="proj9_title">Qbano Conversational Agent</h3>
+                <p data-i18n="proj9_tech">Streamlit · FastAPI · LangChain · LangGraph · RAG</p>
+                <small data-i18n="proj9_desc">Academic LLM agent for Sandwich Qbano with RAG, memory, prompt experiments, FastAPI endpoints, batch evaluation, and n8n workflow documentation.</small>
                 <div class="project-links">
                     <span>Local Streamlit demo</span>
                     <span>Academic project</span>
@@ -200,52 +203,52 @@
 
         <section class="skills" id="skills" aria-label="Skills" hidden>
             <article class="wrapper">
-                <h3>Frontend</h3>
+                <h3 data-i18n="skill_fe">Frontend</h3>
                 <div class="skill-list">
                     <p>React</p><p>TypeScript</p><p>Vite</p><p>React Router</p><p>Tailwind CSS</p><p>Modern CSS</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>Data UI</h3>
+                <h3 data-i18n="skill_data_ui">Data UI</h3>
                 <div class="skill-list">
                     <p>Recharts</p><p>Dashboards</p><p>KPI Cards</p><p>Filters</p><p>Tables</p><p>Realtime Status</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>State & APIs</h3>
+                <h3 data-i18n="skill_state">State &amp; APIs</h3>
                 <div class="skill-list">
                     <p>Custom Hooks</p><p>Context</p><p>useReducer</p><p>Supabase</p><p>Firebase</p><p>REST Flows</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>Interaction</h3>
+                <h3 data-i18n="skill_interaction">Interaction</h3>
                 <div class="skill-list">
                     <p>Framer Motion</p><p>GSAP</p><p>ScrollTrigger</p><p>Responsive UI</p><p>Reduced Motion</p><p>Media UI</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>Quality</h3>
+                <h3 data-i18n="skill_quality">Quality</h3>
                 <div class="skill-list">
                     <p>Git</p><p>ESLint</p><p>GitHub Actions</p><p>Vitest setup</p><p>RTL setup</p><p>Firebase Hosting</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>Data Background</h3>
+                <h3 data-i18n="skill_data_bg">Data Background</h3>
                 <div class="skill-list">
                     <p>Python</p><p>SQL</p><p>Databricks</p><p>BigQuery</p><p>Power BI</p><p>Looker Studio</p>
                 </div>
             </article>
             <article class="wrapper">
-                <h3>Languages</h3>
+                <h3 data-i18n="skill_lang">Languages</h3>
                 <div class="skill-list">
-                    <p>Spanish Native</p><p>English C1</p><p>US Remote Collaboration</p>
+                    <p data-i18n="skill_native">Spanish Native</p><p>English C1</p><p data-i18n="skill_remote">US Remote Collaboration</p>
                 </div>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Javier Portilla Rosero 2026</p>
+        <p data-i18n="footer">&copy; Javier Portilla Rosero 2026</p>
     </footer>
 
     <script src="index.js"></script>
