@@ -1,0 +1,6 @@
+.git/
+.git/**
+**/.*
+firebase.json
+.firebaseignore
+**/node_modules/**
