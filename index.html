@@ -4,129 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini portafolio</title>
+    <meta name="description" content="Javier Portilla — Frontend Developer focused on React, TypeScript, Tailwind CSS, data-rich dashboards, realtime UI, and media-heavy web apps.">
+    <title>Javier Portilla — Frontend Developer · React · TypeScript</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <section class="hero">
-        <img id="toggle-theme" class="theme-btn" src="assets/theme_light.png" alt="theme-icon">
-        <div class="hero-pic">
-            <div class="inner-circle"></div>
-            <img src="assets/javi.png" alt="Javier Portilla">
-        </div>
-        <div class="hero-info">
-            <h1>Javier Portilla</h1>
-            <h2>Frontend Developer</h2>
-            <div class="logo-container">
-                <a href="https://github.com/javierportillar">
-                    <img src="assets/github_light.png" alt="github logo">
-                </a>
-                <a href="https://www.linkedin.com/in/javier-portilla-rosero-b41342164/">
-                    <img src="assets/linkedin_light.png" alt="linkedin logo">
-                </a>
-                <a href="mailto:javierandres.008@hotmail.com">
-                    <img src="assets/email_light.png" alt="email logo">
-                </a>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <button id="toggle-theme" class="theme-btn" type="button" aria-label="Toggle dark mode">
+                <img src="assets/theme_light.png" alt="" aria-hidden="true">
+            </button>
+
+            <div class="hero-pic">
+                <div class="inner-circle"></div>
+                <img src="assets/javi.png" alt="Javier Portilla">
             </div>
-        </div>
-    </section>
-    <section class="experience">
-        <h2><b>2</b><br />Year<br />Frontend</h2>
-        <h2><b>2</b><br />Year<br />Mechatronic Engineering</h2>
-        <h2><b>3</b><br />Satisfied<br />Employers</h2>
-    </section>
-    <section class="cta">
-        <a href="assets/CVJAVIERPORTILLAROSERO.pdf" download>
-            <button class="btn download-btn">Download CV</button>
-        </a>
-        <a href="mailto:javierandres.008@hotmail.com">
-            <button class="btn contact-btn">Contact to Me</button>
-        </a>
-    </section>
-    <section class="portafolio-skills">
-        <div class="btn-bg">
-            <button class="btn-2 active-btn" id="portafolio-btn">Portafolio</button>
-            <button class="btn-2" id="skills-btn">Skills</button>
-        </div>
-    </section>
-    <section class="portafolio" id="portafolio">
-        <div class="wrapper project-wrapper">
-            <h3>Frontend API Pokemon</h3>
-            <a
-                href="https://github.com/javierportillar/estudios_prog/tree/main/3.%20FrameWorks/2.%20Angular/proyecto-pokemon">
-                <img src="assets/pokeApi.png" alt="project-1">
-            </a>
-        </div>
-        <div class="wrapper project-wrapper">
-            <h3>Backend API Pokemon</h3>
-            <a
-                href="https://github.com/javierportillar/estudios_prog/tree/main/3.%20FrameWorks/2.%20Angular/backend-proyecto-pokemon">
-                <img src="assets/backPoke.png" alt="project-1">
-            </a>
-        </div>
-        <div class="wrapper project-wrapper">
-            <h3>Simple calculator, JavaScript </h3>
-            <p>branch javBranch</p>
-            <a href="https://github.com/javierportillar/calcJavascript">
-                <img src="assets/calcJs.png" alt="project-1">
-            </a>
-        </div>
-        <div class="wrapper project-wrapper">
-            <h3>Weather App with JavaScript </h3>
-            <a href="https://github.com/javierportillar/weatherAppJS">
-                <img src="assets/weatherJS.png" alt="project-1">
-            </a>
-        </div>
-        <div class="wrapper project-wrapper">
-            <h3>Weather App using React+Vite </h3>
-            <a href="https://github.com/javierportillar/weatherAppReact">
-                <img src="assets/weatherReact.png" alt="project-1">
-            </a>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="wrapper">
-            <h3>Frontend</h3>
-            <article class="frontend-skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>SASS</p>
-                <p>ReactJS</p>
-                <p>Angular</p>
-                <p>JavaScript</p>
+
+            <div class="hero-info">
+                <p class="eyebrow">Available for Frontend roles</p>
+                <h1 id="hero-title">Javier Portilla</h1>
+                <h2>Frontend Developer for data-rich products</h2>
+                <p class="hero-subtitle">React · TypeScript · Tailwind CSS · Dashboards · Realtime UI</p>
+                <p class="hero-copy">I build polished interfaces for analytical tools, POS systems, realtime monitoring, and media-heavy dashboards — with the data-product judgment that comes from 3+ years in analytics and data engineering.</p>
+
+                <div class="logo-container" aria-label="Social links">
+                    <a href="https://github.com/javierportillar" aria-label="GitHub profile">
+                        <img src="assets/github_light.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/javier-portilla-rosero-b41342164/" aria-label="LinkedIn profile">
+                        <img src="assets/linkedin_light.png" alt="">
+                    </a>
+                    <a href="mailto:javierandres.008@hotmail.com" aria-label="Send email">
+                        <img src="assets/email_light.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" aria-label="Profile highlights">
+            <article>
+                <b>9</b>
+                <span>featured projects</span>
             </article>
-        </div>
-        <div class="wrapper">
-            <h3>Mechatronic Engineer</h3>
-            <article class="backend-skills">
-                <p>English level C1</p>
-                <p>Matlab</p>
-                <p>Simulink</p>
-                <p>Proteus</p>
-                <p>MultiSim</p>
-                <p>Advance Solidworks</p>
-                <p>Digital Control</p>
+            <article>
+                <b>3+</b>
+                <span>years in data products</span>
             </article>
-        </div>
-        <div class="wrapper">
-            <h3>Backend</h3>
-            <article class="backend-skills">
-                <p>Node.js</p>
-                <p>Express.js</p>
-                <p>APIs</p>
-                <p>Git</p>
+            <article>
+                <b>ET</b>
+                <span>timezone overlap</span>
             </article>
-        </div>
-    </section>
+        </section>
+
+        <section class="cta" aria-label="Primary actions">
+            <a class="btn download-btn" href="assets/CVJAVIERPORTILLAROSERO.pdf" download>Download CV</a>
+            <a class="btn contact-btn" href="mailto:javierandres.008@hotmail.com">Contact Me</a>
+        </section>
+
+        <section class="positioning" aria-labelledby="positioning-title">
+            <p class="eyebrow">Why this role fits</p>
+            <h2 id="positioning-title">I build the kind of interfaces this role needs.</h2>
+            <p>Most of my strongest projects are dashboards, admin panels, realtime tools, and data-heavy workflows. I enjoy the part where UI craft meets messy real data: clear states, useful charts, API edge cases, responsive layouts, and screens that help people make decisions without fighting the product.</p>
+        </section>
+
+        <section class="portfolio-skills">
+            <div class="btn-bg" role="tablist" aria-label="Portfolio sections">
+                <button class="btn-2 active-btn" id="portfolio-btn" type="button" role="tab" aria-selected="true" aria-controls="portfolio">Portfolio</button>
+                <button class="btn-2" id="skills-btn" type="button" role="tab" aria-selected="false" aria-controls="skills">Skills</button>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio" aria-label="Featured projects">
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://mymoneyappjpr.web.app/" aria-label="Open FinPilot live app">
+                    <img src="assets/projects/finpilot.jpg" alt="FinPilot secure access screen running locally">
+                </a>
+                <h3>FinPilot — Personal Finance</h3>
+                <p>React 19 · TypeScript · Recharts · Supabase · PWA</p>
+                <small>Realtime finance dashboard with charts, KPI cards, categorization, persistent state, and mobile-first behavior.</small>
+                <div class="project-links">
+                    <a href="https://mymoneyappjpr.web.app/">Live app</a>
+                    <a href="https://github.com/javierportillar/personalApp">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://javierportillar.github.io/saviaInventory/" aria-label="Open Savia Inventory live app">
+                    <img src="assets/projects/savia-inventory.jpg" alt="Savia Inventory dashboard running locally">
+                </a>
+                <h3>Savia Inventory — POS</h3>
+                <p>React 18 · TypeScript · Tailwind · Supabase</p>
+                <small>Restaurant POS and operations platform with complex cart state, split payments, inventory modules, analytics, and AI strategy support.</small>
+                <div class="project-links">
+                    <a href="https://javierportillar.github.io/saviaInventory/">Live app</a>
+                    <a href="https://github.com/javierportillar/saviaInventory">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://portillaroserocasa.web.app/" aria-label="Open Casa live dashboard">
+                    <img src="assets/projects/casa.jpg" alt="Casa Sentinel access dashboard running locally">
+                </a>
+                <h3>Casa — Facial Access</h3>
+                <p>React 19 · Supabase · Recharts · Media UI</p>
+                <small>Realtime dashboard for a Raspberry Pi facial-recognition system with device metrics, camera previews, logs, remote commands, and video playback.</small>
+                <div class="project-links">
+                    <a href="https://portillaroserocasa.web.app/">Live app</a>
+                    <a href="https://github.com/javierportillar/casa">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://fondofortuna.web.app/" aria-label="Open Fondo Fortuna live app">
+                    <img src="assets/projects/fondo-fortuna.jpg" alt="Fondo Fortuna store running locally">
+                </a>
+                <h3>Fondo Fortuna</h3>
+                <p>React 19 · Tailwind · Recharts · Firebase</p>
+                <small>Cooperative management platform with role-based routing, dashboards, loan/savings flows, mobile cart, and Gemini-powered financial advisor.</small>
+                <div class="project-links">
+                    <a href="https://fondofortuna.web.app/">Live app</a>
+                    <a href="https://github.com/javierportillar/fondof">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://apartamentosamobladosbosquesdellimonar.com.co/" aria-label="Open Bosques del Limonar live site">
+                    <img src="assets/projects/bosques-del-limonar.jpg" alt="Bosques del Limonar landing page running locally">
+                </a>
+                <h3>Bosques del Limonar</h3>
+                <p>React 18 · TypeScript · GSAP · Framer Motion</p>
+                <small>Premium landing page with scroll-triggered motion, parallax, responsive visual storytelling, and reduced-motion support.</small>
+                <div class="project-links">
+                    <a href="https://apartamentosamobladosbosquesdellimonar.com.co/">Live site</a>
+                    <a href="https://github.com/javierportillar/bosquesdellimonar">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://javierportillar.github.io/saviaMenu/" aria-label="Open SAVIA Menu live site">
+                    <img src="assets/projects/savia-menu.jpg" alt="SAVIA digital menu running locally">
+                </a>
+                <h3>SAVIA — Digital Menu</h3>
+                <p>React 19 · Tailwind · Vanilla JS · JSON</p>
+                <small>Fast digital menu with JSON data, live search, responsive layout, print stylesheet, and GitHub Pages deployment.</small>
+                <div class="project-links">
+                    <a href="https://javierportillar.github.io/saviaMenu/">Live menu</a>
+                    <a href="https://github.com/javierportillar/saviaMenu">Repository</a>
+                </div>
+            </article>
+
+
+            <article class="wrapper project-wrapper">
+                <a class="project-shot" href="https://app.fragloesja.uk/" aria-label="Open MotoShop Data live app">
+                    <img src="assets/projects/motoshop-data.jpg" alt="MotoShop Data PWA login running locally">
+                </a>
+                <h3>MotoShop Data Platform</h3>
+                <p>Next.js 14 · FastAPI · DuckDB · Recharts · PWA</p>
+                <small>Digital transformation platform for a motorcycle parts business: ETL, data products, SKU search, dashboards, forecasting, and AI-assisted operational insights.</small>
+                <div class="project-links">
+                    <a href="https://app.fragloesja.uk/">Live app</a>
+                    <a href="https://github.com/javierportillar/motoshopData">Repository</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <div class="project-shot" aria-label="Sign Language Recognition local screenshot">
+                    <img src="assets/projects/sign-language.jpg" alt="Sign Language Recognition Streamlit UI running locally">
+                </div>
+                <h3>Sign Language Recognition</h3>
+                <p>Streamlit · gRPC · Docker · YOLO · ONNX</p>
+                <small>Microservice-based computer vision system: Streamlit UI sends image/video frames to a gRPC inference service running a YOLO model exported to ONNX.</small>
+                <div class="project-links">
+                    <span>Local Docker demo</span>
+                    <a href="https://github.com/juan-plazas05/TallerFinalGestionProyectos">Academic repo</a>
+                </div>
+            </article>
+
+            <article class="wrapper project-wrapper">
+                <div class="project-shot" aria-label="Qbano conversational agent local screenshot">
+                    <img src="assets/projects/qbano-agent.jpg" alt="Qbano conversational agent Streamlit UI running locally">
+                </div>
+                <h3>Qbano Conversational Agent</h3>
+                <p>Streamlit · FastAPI · LangChain · LangGraph · RAG</p>
+                <small>Academic LLM agent for Sandwich Qbano with RAG, memory, prompt experiments, FastAPI endpoints, batch evaluation, and n8n workflow documentation.</small>
+                <div class="project-links">
+                    <span>Local Streamlit demo</span>
+                    <span>Academic project</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="skills" id="skills" aria-label="Skills" hidden>
+            <article class="wrapper">
+                <h3>Frontend</h3>
+                <div class="skill-list">
+                    <p>React</p><p>TypeScript</p><p>Vite</p><p>React Router</p><p>Tailwind CSS</p><p>Modern CSS</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>Data UI</h3>
+                <div class="skill-list">
+                    <p>Recharts</p><p>Dashboards</p><p>KPI Cards</p><p>Filters</p><p>Tables</p><p>Realtime Status</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>State & APIs</h3>
+                <div class="skill-list">
+                    <p>Custom Hooks</p><p>Context</p><p>useReducer</p><p>Supabase</p><p>Firebase</p><p>REST Flows</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>Interaction</h3>
+                <div class="skill-list">
+                    <p>Framer Motion</p><p>GSAP</p><p>ScrollTrigger</p><p>Responsive UI</p><p>Reduced Motion</p><p>Media UI</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>Quality</h3>
+                <div class="skill-list">
+                    <p>Git</p><p>ESLint</p><p>GitHub Actions</p><p>Vitest setup</p><p>RTL setup</p><p>Firebase Hosting</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>Data Background</h3>
+                <div class="skill-list">
+                    <p>Python</p><p>SQL</p><p>Databricks</p><p>BigQuery</p><p>Power BI</p><p>Looker Studio</p>
+                </div>
+            </article>
+            <article class="wrapper">
+                <h3>Languages</h3>
+                <div class="skill-list">
+                    <p>Spanish Native</p><p>English C1</p><p>US Remote Collaboration</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy Javier Portilla Rosero 2023</p>
+        <p>&copy; Javier Portilla Rosero 2026</p>
     </footer>
+
     <script src="index.js"></script>
 </body>
 
